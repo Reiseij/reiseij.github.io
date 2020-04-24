@@ -1,0 +1,48 @@
+.center {
+  text-align: center;
+  margin: 100px;
+}
+.taulukko {
+  text-align: left;
+}
+.logot {
+  height: 200px;
+  width: 200px;
+}
+.logo {
+  height: 300px;
+  width: auto;
+  float: right;
+}
+
+pre {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f2334c;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+.left {
+  text-align: left;
+  margin-left: 30px;
+}
+.right {
+  margin-right: 30px;
+}
+.henkipollokuva {
+  height: 400px;
+  width: auto;
+}
+.kalenterikuva {
+  width: 1138px;
+  height: 580px;
+}
