@@ -44,7 +44,7 @@
       <div class="container">
         <header>
           <h2>Hankitut osaamiseni</h2>
-          <p>Asioita joita opin Lintukoto sovellusta tehdessäni</p>
+          <p>Asioita, joita opin Lintukoto-sovellusta tehdessäni</p>
         </header>
         <div class="row aln-center">
           <div class="col-4 col-6-medium col-12-small">
@@ -135,25 +135,25 @@
         Lintukoto kannustaa opiskelijaa pitämään huolta opintojaksoistaan samalla tavalla kuin hoidetaan virtuaalisia lemmikkejä.
         Lintukoto myös tukee opiskelijan hyvinvointia ja jaksamista opintojen aikana."</br>
         <strong>Nämä olivat sovelluksemme lähtökohdat, tälläisen sovelluksen halusimme luoda.</strong></br></br>
-        Projektissamme päätyönäni oli frontend-koodari ja toisena työnäni olin päätestaaja. Totetutin myös muutamia visuaalisia elementtejä 
+        Projektissa minun tehtävänäni oli toimia frontend-koodarina ja päätestaajana. Toteutin myös muutamia visuaalisia elementtejä 
         kuten sovelluksemme logon (oikealla) ja autoin meidän graafikkoa ideoimaan ja mallintamaan.
       </br></br>
         Projektin alkuvaiheilla suurimmaksi ongelmaksemme huomasimme kalenterin teon. Meitä varoitettiin monesti että kalenterin itse koodaaminen olisi liki mahdottomuus.
-        Tämän vuoksi päädyimme etsimään netin syövereistä jotain kalenteripalikkaa, joka saataisiin suhteellisen vaivattomasti implementoitua sovelluksemme.
+        Tämän vuoksi päädyimme etsimään netin syövereistä jotain kalenteripalikkaa, joka saataisiin suhteellisen vaivattomasti implementoitua sovellukseemme.
         Löysinkin jo ensimmäisellä viikolla Syncfuisionin Scheduler komponentin, joka vaikutti lupaavalle vaikkakin haastavalle aluksi ymmärtää. 
         Lähdimmme testailemaan komponenttia ja saimmekin jo ensimmäisellä sprintillä karkean kuvan sovelluksemme tulevasta kalenterista: </br>
         <img class="kalenterikuva" src="/images/sprintti1kalenteri.png" alt="kuva kalenterimme alkuvaiheilta"> </br>
         Lähdin toteuttamaan kalenteriamme ensin tutoriaalien kautta. Tutoriaalien pohjalta ei kuitenkaan saatu täysin meidän näköistä ja meidän tarpeisiimme toimivaa kalenteria.
-        Kalenterin muokkaaminen tapahtui Syncfusionin omien koodinpätkien lisäämisellä ja niiden uudelleen kirjottamisella.
+        Kalenterin muokkaaminen tapahtui Syncfusionin omien koodinpätkien lisäämisellä ja niiden uudelleen kirjoittamisella.
         </p>
       </br>
         <h3>KALENTERI</h3>
         <p class="left">
-          <strong>Scheduler toimii siten että html tiedostoon annetaan määreitä, jotka on Syncfusion jo ennalta luonut, näin saadaan kustomoitua kalenterista millainen vain, 
-            esimerkiksi showHeaderBar määre on asetettu typescriptissä trueksi, jolloin kalenterissa näkyy yläpalkki 
-            johon voidaan sitten lisätä vaikka kuukausivalikko tai nykyhetkeen siirtymiseen tarkoitettu nappula, tai showTimeIndicator määre joka lisää kalenterin päälle viivan
-            havainnollistaen nykyhetken. </br>
-            Vaikka tämä koodi näyttää yksinkertaiselle niin näiden oikeiden lisäpalikoiden löytäminen ja liittäminen kalenteriin oli aluksi haaste.
+          <strong>Scheduler toimii siten että html-tiedostoon annetaan Syncfusionin ennalta luomia määreitä, jolloin kalenterista saadaan räätälöityä toivotunlainen.
+            Esimerkiksi kun showHeaderBar-määre on asetettu typescriptissä trueksi saadaan kalenteriin näkymään yläpalkki, 
+            johon voidaan lisätä kuukausivalikko ja nykyhetkeen siirtymiseen tarkoitettu nappula. Asettamalla trueksi showTimeIndicator-määre saadaan kalenterin päälle viiva
+            havainnollistamaan nykyhetkeä. </br>
+            Vaikka tämä koodi näyttää yksinkertaiselta niin näiden oikeiden lisäpalikoiden löytäminen ja liittäminen kalenteriin oli aluksi haaste.
           </strong>
           <img class="kalenterikuva" src="/images/kalenteri.png" alt="kuva kalenterista">
       </p>
@@ -225,16 +225,16 @@
       </div>
     </article>
     <article class="wrapper container">
-      <h3>TEHTÄVÄT TAULUKKO</h3>
-      <p><strong>Toinen haaste jota lähdin kalenterin yhteydessä ratkomaan oli kalenterin alapuolelle lisättävä tehtävä-kenttä,
-        johon käyttäjä voisi lisätä tehtäviä ja siltä sitten vetää niitä hiirellään kalenteriin (drag and drop). Löysin Syncfusionilta tähänkin mallin, 
-        jota lähdin työstämään meidän näköiseksi. Tehtävät sain hyvin näkymään ja drag and droppailukin toimi hyvin mutta ongelmaksi 
-        syntyi tehtävän poistaminen taulukosta kun tehtävää vedetään kalenteriin. Luovutimme tämän kanssa hetkeksi mutta monien viikkojen jälkeen saimme
-        ongelman kuitenkin ratkaistua, kun yhdistimme fronttia backkiin. Ongelmana oli Syncfusionin puutteellinen materiaali, josta ei löytynyt tietoa deleteRecord methodista </strong></p>
+      <h3>TEHTÄVÄT-TAULUKKO</h3>
+      <p><strong>Toinen haaste, jota lähdin kalenterin yhteydessä ratkomaan oli kalenterin alapuolelle lisättävä tehtävä-kenttä,
+        johon käyttäjä voisi lisätä tehtäviä ja sieltä vetää niitä hiirellään kalenteriin (drag and drop). Löysin Syncfusionilta tähänkin mallin, 
+        jota lähdin työstämään meidän näköiseksi. Tehtävät sain hyvin näkymään ja drag and droppailukin toimi hyvin, mutta ongelmaksi 
+        syntyi tehtävän poistaminen taulukosta, kun tehtävää vedetään kalenteriin. Luovutimme tämän kanssa hetkeksi, mutta monien viikkojen jälkeen saimme
+        ongelman kuitenkin ratkaistua, kun yhdistimme fronttia backkiin. Ongelmana oli Syncfusionin puutteellinen materiaali, josta ei löytynyt tietoa deleteRecord metodista. </strong></p>
       <div class="container taulukko">
         <pre>
           <code class="html">
-            TEHTÄVÄT TAULUN HTML
+            TEHTÄVÄT-TAULUN HTML
 
           &#60;div class="tehtavat-div unselectable"&#62;
             &#60;ejs-grid
@@ -277,7 +277,7 @@
       </pre>
       <pre>
         <code class="javascript">
-          TEHTÄVÄT TAULUN TYPESCRIPT
+          TEHTÄVÄT-TAULUN TYPESCRIPT
 
           // taulukon data
 
@@ -347,13 +347,14 @@
     <article class="wrapper container">
       <h3>HENKIPÖLLÖN PUHEKUPLA</h3>
       <p> <strong>
-        Yhtenä taskina oli henkipöllön info puhekuplan tekeminen. Otin tämän itselleni ja lähdin toteuttamaan sitä Bootstrapin modaleilla. Sain aikaan henkipöllön joka lymyilee joka sivun
-        oikeassa alalaidassa ja halutessaan käyttäjä voi kutsua henkipöllön apuun klikkaamalla hänen kuvakettaan. </br><img class="henkipollokuva" src="/images/henkipollo1.png" alt="henkipöllön kuvake"> </br>
+        Yhtenä tehtävänä oli henkipöllön puhekuplan tekeminen. Otin tämän itselleni ja lähdin toteuttamaan sitä Bootstrapin modaleilla. Sain aikaan henkipöllön, joka lymyilee joka sivun
+        oikeassa alalaidassa ja jonka käyttäjä voi halutessaan kutsua apuun klikkaamalla hänen kuvakettaan. </br><img class="henkipollokuva" src="/images/henkipollo1.png" alt="henkipöllön kuvake"> </br>
         Kuvaketta klikkaamalla henkipöllö antaa vaihtoehtoja. </br><img class="henkipollokuva" src="/images/henkipollo2.png" alt="henkipöllön valikko auki"> </br>
         "Hauska fakta" , joka arpoo käyttäjälle hauskan faktan. </br><img class="henkipollokuva" src="/images/henkipollo3.png" alt="henkipöllön valikko auki"> </br>
-        "Mitä tällä sivulla tehdään?", joka kertoo käyttäjälle lyhyesti mitä kyseisellä sivulla tehdään.</br><img class="henkipollokuva" src="/images/henkipollo4.png" alt="henkipöllön valikko auki"> </br>
-        "Henkipöllön pesä", jota klikkaamalla pääsee suoraan henkipöllön pesään, jossa on auttavia linkkejä esimerkiksi opintoihin liittyviin ongelmiin tai tasapainoiseen elämään.</br>
-        Henkipöllön infot vaihtuvat aina kun käyttäjä vaihtaa sivua. Jos käyttäjä on suoritettujen kurssien sivulla henkipöllö kertoo sen sivun käyttötarkoituksista.
+        "Mitä tällä sivulla tehdään?", joka kertoo käyttäjälle lyhyesti mitä kyseisellä sivulla tehdään. </br>
+        Esimerkiksi, jos käyttäjä on suoritettujen kurssien sivulla henkipöllö kertoo sen sivun käyttötarkoituksista.</br><img class="henkipollokuva" src="/images/henkipollo4.png" alt="henkipöllön valikko auki"> </br>
+        Henkipöllön pesä-nappulaa klikkaamalla pääsee sivulle, jossa on auttavia linkkejä esimerkiksi opintoihin liittyviin ongelmiin tai tasapainoiseen elämään.</br>
+        
       </strong>
       </p>
       <div class="container taulukko">
@@ -535,13 +536,13 @@
         <strong>
         Tein JavaScriptillä muutaman Selenium skriptin. Yksi niistä oli esimerkiksi muistiinpanon testaaminen. Tässä testissä luodaan uusi muistiinpano, 
         varmistetaan että muistiinpano tallentui, muokataan sitä ja lopulta poistetaan se. Tein myös ylimääräisen sleep funktion, jotta näkisin itse prosessin selkeämmin 
-        ja jotta videosta tulisi havainnollistavampi. Sleep funktio auttoi myös kun jokin elementti ei latautunut sivulle heti vaan kesti muutaman sekunnin, pystyin sleep 
-        funktiolla hidastamaan koodin ajoa. Toinen "ylimääräinen" funktio on päivämäärän muotoilu. En saanut jostain syystä javascriptin omia funktioita toimimaan niinkuin halusin,
-        joten totesin helpommaksi itse formatoida päivämäärän. Halusin päivämäärän siksi, että skripti tunnistaa mitä muistiinpanoa tulee muokata ja poistaa, ajattelin
-        myös jatkokehityksenä siten, että jos nämä testit logattaisiin jonnekkin, ehkä päivämäärästä voisi olla hyötyä.
-      </br>
-      Tutustuin myös hieman XML:ään ja XPathiin. Joitakin elementtejä sivulla oli helpompi löytää XPathin avulla, esimerkiksi Bootstrapin dropdown valikosta oli vaikeaa
-      kohdistaa tiettyyn elementtiin ilman XPathia. 
+        ja jotta videosta tulisi havainnollistavampi. Sleep funktio auttoi myös kun jokin elementti ei latautunut sivulle heti vaan kesti muutaman sekunnin, joten pystyin sleep 
+        funktiolla hidastamaan koodin ajoa.</br></br> Toinen "ylimääräinen" funktio on päivämäärän muotoilu. En saanut jostain syystä javascriptin omia funktioita toimimaan niinkuin halusin,
+        joten totesin helpommaksi itse formatoida päivämäärän. Halusin päivämäärän siksi, että skripti tunnistaa mitä muistiinpanoa tulee muokata ja poistaa. 
+        Jatkokehityksen kannalta ajattelin myös, että jos nämä testit logattaisiin, päivämäärästä voisi ehkä olla hyötyä.
+      </br></br>
+      Tutustuin myös hieman XML:ään ja XPathiin. Joitakin elementtejä sivulla oli helpompi löytää XPathin avulla, esimerkiksi Bootstrapin dropdown-valikosta oli vaikea 
+      valita tiettyä elementtiä ilman XPathia. 
     </strong>
       </p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/62nBhhNSSVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -659,18 +660,18 @@
     <article class="wrapper container">
       <h3>TYÖNTEKO JA REFLEKTOINTI</h3>
       <p>
-        <strong> Työtunteja on tähän mennessä (24.4) kertynyt 391h. Sovelluksen toteutus ja Ticorporate alkoi 14.1.2020. Ensimmäiset kaksikuukautta alkoi lupaavasti ja saimme
+        <strong> Työtunteja on tähän mennessä (24.4) kertynyt 391h. Sovelluksen toteutus ja Ticorporate alkoi 14.1.2020. Ensimmäiset kaksi kuukautta alkoivat lupaavasti ja saimme
         sovellusta eteenpäin nopeaa tahtia. Kuitenkin vallitsevan tilanteen vuoksi 16.3 lähtien työmme sovelluksen parissa muuttui etätyöskentelyksi.
-        Etätyöt toivat aluksi haasteita, kuten keskittymisen ylläpito sekä tiimin sisäinen kommunikointi. Onneksi olimme alustalähtien hyödyntäneet Zenhubia 
+        Etätyöt toivat aluksi haasteita, kuten keskittymisen ylläpito sekä tiimin sisäinen kommunikointi. Onneksi olimme alusta lähtien hyödyntäneet Zenhubia 
         työn jakoon ja sprinttien organisointiin. Zenhub auttoi tiimiämme jakamaan työt, joka etenkin etätyöskentelyssä on erityisen tärkeää, kun ei voi vain 
         huikata kavereille, kun aloittaa työstämään jotain.
       </br></br>
-      Töitä tehdessäni, niin etänä kuin paikanpäällä olen oppinut paljon. Toimistolla opin tiimin yhteisehengen tärkeydestä ja siitä kuinka tärkeää on kyetä pyytämään 
-      apua jos sitä tarvitsee, mutta siten ettei kokoajan häritse muiden työskentelyä. Etätyöt opettivat itsekurin, työnjaon ja kommunikoinnin tärkeyttä.
+      Töitä tehdessäni, niin etänä kuin paikanpäällä olen oppinut paljon. Toimistolla opin tiimin yhteishengen tärkeydestä ja siitä kuinka tärkeää on kyetä pyytämään 
+      apua jos sitä tarvitsee kuitenkaan jatkuvasti häiritsemättä muiden työskentelyä. Etätyöt opettivat itsekurin, työnjaon ja kommunikoinnin tärkeyttä.
       Asetin itselleni aluksi tavoitteen, että olisin sovelluksen front sekä backend toteutuksessa mukana. Toisaalta onneksi tiimissä oli jo toinen sovelluskehittäjä, joka
-      otti backendin itselleen. Sanoisin osaavani Angularin perusteet nyt niin hyvin, että perusjutuissa ei enään tarvitse Googlata kaikkea. 
-      Muutenkin frontendin ulkonäkö ja sommittelu hoituu omastamielestäni ilman suurempia ongelmia. Kehittämiskohteena sanoisin olevan vielä backend. 
-      Perus jutut tietokannasta ja backin ja frontin yhteydestä ymmärrän mutta hankalammat CRUD ja muut backend asiat ovat vielä hakusessa.
+      otti backendin itselleen. Sanoisin osaavani Angularin perusteet nyt niin hyvin, että perusjutuissa ei enää tarvitse googlata kaikkea. 
+      Muutenkin frontendin ulkonäkö ja sommittelu hoituu omasta mielestäni ilman suurempia ongelmia. Kehittämiskohteena sanoisin olevan vielä backend. 
+      Perusasiat tietokannasta ja backin ja frontin yhteydestä ymmärrän, mutta hankalammat CRUD- ja backend-asiat ovat vielä hakusessa.
       </p></strong>
     </article>
     <!-- 
