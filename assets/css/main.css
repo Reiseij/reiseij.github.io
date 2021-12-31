@@ -2,10 +2,10 @@
 @import url('fontawesome-all.min.css');
 
 .padding-top {
-  padding-top: 20px;
+  padding-top: 20px !important;
 }
 .margin-right {
-  margin-right: 20px;
+  margin-right: 20px !important;
 }
 
 /*
